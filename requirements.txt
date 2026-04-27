@@ -21,3 +21,4 @@ langchain-anthropic
 # Utils
 pillow
 python-dotenv
+gunicorn
