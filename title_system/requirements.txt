@@ -23,4 +23,4 @@ pillow
 python-dotenv
 gunicorn
 dj-database-url
-langchain-ollama  
+langchain-groq
