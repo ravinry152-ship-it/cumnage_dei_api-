@@ -172,13 +172,18 @@ SIMPLE_JWT = {
 DEBUG = True  # for development only
 
 # កែសម្រួល ALLOWED_HOSTS ឱ្យមាន IP របស់ Emulator
-ALLOWED_HOSTS = ['*']
-
-ALLOWED_HOSTS = ['10.0.2.2', '127.0.0.1', 'localhost', '0.0.0.0','.hf.space']
-CSRF_TRUSTED_ORIGINS = [
-    "https://*.hf.space",
-    "http://10.0.2.2",
+# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'cumnage-dei-api.onrender.com',
+    'localhost',
+    '127.0.0.1',
 ]
+
+# ALLOWED_HOSTS = ['10.0.2.2', '127.0.0.1', 'localhost', '0.0.0.0','.hf.space']
+# CSRF_TRUSTED_ORIGINS = [
+#     "https://*.hf.space",
+#     "http://10.0.2.2",
+# ]
 
 SITE_ID = 1
 REST_USE_JWT = True
