@@ -24,3 +24,4 @@ python-dotenv
 gunicorn
 dj-database-url
 langchain-groq
+whitenoise
