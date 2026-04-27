@@ -1,0 +1,29 @@
+# Django Core
+django
+djangorestframework
+django-cors-headers
+djangorestframework-simplejwt
+dj-rest-auth
+django-allauth
+requests
+
+# Database
+psycopg2-binary
+
+# Auth / Security
+cryptography
+
+# LangGraph + LangChain
+langgraph
+langchain
+langchain-core
+langchain-anthropic
+
+# Utils
+pillow
+python-dotenv
+
+#==============admin Login=====================
+#username : ravin
+#password : ravin
+#==============================================
