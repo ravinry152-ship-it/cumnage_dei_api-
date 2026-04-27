@@ -22,3 +22,4 @@ langchain-anthropic
 pillow
 python-dotenv
 gunicorn
+dj-database-url
