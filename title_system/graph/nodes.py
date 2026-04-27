@@ -1,10 +1,17 @@
 import base64
 import json
 from django.conf import settings
-from langchain_ollama import ChatOllama
+from langchain_groq import ChatGroq
+import os
 from langchain_core.messages import HumanMessage
-llm_vision = ChatOllama(model="gemma2:2b") 
-llm_text = ChatOllama(model="qwen2.5:7b")
+llm_vision = ChatGroq(
+    model="meta-llama/llama-4-scout-17b-16e-instruct",
+    api_key=os.environ.get("GROQ_API_KEY")
+)
+llm_text = ChatGroq(
+    model="llama-3.3-70b-versatile",
+    api_key=os.environ.get("GROQ_API_KEY")
+)
 
 def update_document_status(doc_id: int, status: str, **kwargs):
     from mytitle.models import CRUD
